@@ -81,7 +81,7 @@ main, footer {
 }
 
 .studyMenuButtonContainer:hover {
-    background-color: rgb(168, 168, 168);
+    background-color: grey;
     color: rgb(230, 230, 230);
 }
 
@@ -94,7 +94,7 @@ main, footer {
 } */
 
 .studyMenuButtonContainer:active {
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(151, 151, 151);
 }
 
 .studyMenuButtonText {
@@ -126,22 +126,31 @@ main, footer {
 }
 
 .studyInfoFooterContainer {
-    display: flex;
-    align-content: center;
+    display: block;
     text-align: center;
-    background-color: red;
 }
 
 .studyInfoFooterButton {
-    text-align: center;
+    display: inline-block;
     background-color: grey;
     color: white;
-    width: 100px;
+    width: 120px;
     height: 25px;
     font-weight: bold;
     font-size: 10pt;
     letter-spacing: 1px;
+    border-radius: 100px 100px 100px 100px;
+    margin-top: 10px;
 }
+
+.studyInfoFooterButton:hover {
+    background-color: rgb(145, 145, 145);
+}
+
+.studyInfoFooterButton:active {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.100) inset;
+}
+    
 
 /* Caixas de Link */
 .studyInfoBoxContainer {
@@ -153,11 +162,19 @@ main, footer {
     border-radius: 10px 10px 10px 10px;
     border: solid 2px rgb(179, 179, 179);
     text-align: center;
-    width: 200px;
-    height: 345px;
+    width: 195px;
+    height: 325px;
     color: rgb(63, 63, 63);
     display: inline-block;
     margin: 5px;
+}
+
+.studyInfoBox:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.studyInfoBox:active {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.100) inset;
 }
 
 .studyInfoBoxTitle {
@@ -165,9 +182,8 @@ main, footer {
 }
 
 .studyInfoBoxImage {
-    width: 180px;
-    height: 180px;
-    background-color: white;
+    width: 150px;
+    height: 150px;
 }
 
 .studyInfoBoxLinkAddress {
