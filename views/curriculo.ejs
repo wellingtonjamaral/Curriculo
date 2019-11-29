@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/styles/curriculo.css" />
+  <title><%= title %></title>
+</head>
+
+<body>
+  <main>
+    <div class="menuTopButton">
+        <a class="homeButton" href="/">INÍCIO</a>
+        <a class="homeButton" href="/">CONTATO</a>
+    </div>
+    <p class="pageTitle">Bem vindo(a) ao <strong><%= title %></strong></p>
+    <div class="perfilBox">
+      <img class="bgPerfilBox" src="/images/imgPerfil.png" />
+      <img class="photoPerfilBox" src="/images/imgPerfil.jpg" />
+      </br>
+      <strong class="contactSubTitle"><%= subTitleContact %></strong>
+      <% contact.map(contact => { %>
+      <p class="contactText"><%= contact.email %></p>
+      <p class="contactText"><%= contact.cellPhone %></p>
+      <% }); %>
+    </div>
+    <div class="curriculoBox">
+      <h1><%= name %></h1>
+      <p><%= profession %></p>
+      <p class="description"><%= description %></p>
+      <ul>
+        <strong class="subTitle"><%= subTitleCourse %></strong>
+        <% course.map(course => { %>
+        <li class="listStyle">
+          <div>
+            <span><%= course.skill %></span>
+            <br>
+            <span><%= course.institution %></span>
+            <br>
+            <span><%= course.finishedIn %></span>
+          </div>
+        </li>
+        <% }); %>
+      </ul>
+      <ul>
+        <strong class="subTitle"><%= subTitleEducation %></strong>
+        <% education.map(education => { %>
+        <li class="listStyle">
+          <div>
+            <span><%= education.description %></span>
+            <br>
+            <span><%= education.institution %></span>
+            <br>
+            <span><%= education.finishedIn %></span>
+          </div>
+        </li>
+        <% }); %>
+      </ul>
+      <ul>
+        <% skills.map(skill => { %>
+        <li><%= skill %></li>
+        <% }); %>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>

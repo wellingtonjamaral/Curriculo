@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/styles/main.css" />
+  <title><%= title %></title>
+</head>
+
+<body>
+  <main>
+      <div class="menuTopButton">
+          <a class="homeButton" href="/">CONTATO</a>
+        </div>
+    <h1 class="title"><%= title %></h1>
+    <div class="menu">
+      <a href="/curriculo">
+        <div class="menuBox">
+          <img class="meniIcon" src="/images/curriculoIcon.png" />
+          <p class="menuText">Curriculo</p>
+        </div>
+      </a>
+      <a href="/projetos">
+      <div class="menuBox">
+        <img class="meniIcon" src="/images/projetosIcon.png" />
+        <p class="menuText">Projetos</p>
+      </div>
+      </a>
+      <a href="/estudos">
+      <div class="menuBox">
+        <img class="meniIcon" src="/images/estudosIcon.png" />
+        <p class="menuText">Estudos</p>
+      </div>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <p>Versão <%= version %></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+/* ####### Reset Browser Styles ####### */
+
+/* reset de margens */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ########################## */
+
+body {
+    font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+    line-height: 2;
+    background-image: url("/images/background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Menu Top */
+.menuTopButton {
+    text-align: right;
+}
+
+.homeButton {
+    margin-left: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 10pt;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 3px white;
+    transition: 0.1s;
+}
+
+.homeButton:hover {
+    text-shadow: 0px 0px 5px white;
+    transition: 0.1s;
+}
+
+/* Corpo */
+main, footer {
+    max-width: 960px;
+    margin: auto;
+}
+.pageTitle {
+    color: rgb(243, 243, 243);
+    font-size: 25pt;
+    margin-left: 300px;
+    margin-bottom: -100px;
+    margin-top: 100px;
+}
+
+/* Perfil Box */
+
+.perfilBox {
+    background-color: rgb(226, 226, 226);
+    margin-top: 60px;
+    margin-left: -100px;
+    margin-right: 20px;
+    width: 300px;
+    height: 450px;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.400);
+    float: left;
+}
+
+.bgPerfilBox {
+    width: 300;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: -5px;
+}
+
+.photoPerfilBox {
+    border-radius: 50% 50% 50% 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: -127px;
+    border: solid 3px white;
+}
+
+.contactText {
+    color: rgb(54, 54, 54);
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 11pt;
+}
+
+.contactSubTitle {
+    color: rgb(54, 54, 54);
+}
+
+/* Curriculo Box */
+
+.curriculoBox {
+    background-color: rgb(243, 243, 243);
+    margin-top: 140px;
+    margin-bottom: 100px;
+    font-size: 12pt;
+    padding: 50px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.description {
+    margin-bottom: 130px;
+}
+
+.subTitle {
+    font-size: 20pt;
+    color: rgb(59, 145, 37);
+}
+
+.listStyle {
+    margin-bottom: 35px;
+}

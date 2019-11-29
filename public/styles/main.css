@@ -1,0 +1,99 @@
+/* ####### Reset Browser Styles ####### */
+
+/* reset de margens */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ########################## */
+
+/* Menu Top */
+.menuTopButton {
+    text-align: right;
+}
+
+.homeButton {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 10pt;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 3px white;
+    transition: 0.1s;
+}
+
+.homeButton:hover {
+    text-shadow: 0px 0px 5px white;
+    transition: 0.1s;
+}
+
+/* Corpo */
+body {
+    font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+    line-height: 2;
+    background-image: url("/images/background.jpg");
+}
+
+main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.title {
+    color: rgb(221, 221, 221);
+    margin-bottom: 200px;
+    font-size: 35pt;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
+}
+
+
+.menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height:250px;
+}
+
+.menuBox {
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.600);
+    width: 180px;
+    height: 200px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.400);
+    transition: 0.3s;
+    line-height: 215px;
+}
+
+.menuBox:hover {
+    background-color: rgba(255, 255, 255, 0.800);
+    width: 195px;
+    height: 225px;
+    margin: 23px;
+    margin-top: 16px;
+    transition: 0.5s;
+}
+
+.menuBox:active {
+    background-color: rgb(145, 145, 145);    
+}
+
+.meniIcon {
+    
+}
+
+.menuText {
+    margin-top: -100px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    line-height: 25px;
+    color: rgb(82, 82, 82);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.245);
+}
