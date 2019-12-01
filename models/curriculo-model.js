@@ -4,13 +4,11 @@ const data = {
     profession: 'Software Engineer',
     description: 'Experiência em desenvolvimento de single page applications com JavaScript e frameworks JavaScript (já trabalhei com Angular e React), module bundlers, package managers, transpilers (como Babel), pre processadores CSS (Sass e Stylus), task managers, arquitetura CSS (como BEM e SMACSS), Git, SEO, acessibilidade e usabilidade.',
     subTitleCourse: 'Cursos',
-    /* add */
     subTitleContact: 'Contato',
     contact: [{
         email: 'E-Mail: leocosta.black@gmail.com',
         cellPhone: 'Celular: (11) 9872-56815'
     }],
-    /* ###### */
     course: [{
         skill: 'Web Design',
         institution: 'Instituição: All Net – Núcleo de Formação Profissional',

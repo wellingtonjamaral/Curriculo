@@ -1,8 +1,11 @@
 const express = require('express')
 const router = express.Router();
 
+const estudosController = require('../controllers/estudos-controller');
+
 router.get('/', (req, res, next) => {
-    res.render('estudos');
+    const estudosData = estudosController.getData();
+    res.render('estudos', estudosData);
 });
 
 module.exports = router;
