@@ -11,3 +11,11 @@ exports.getinfoBoxExercicios = () => {
 exports.getinfoBoxAnotacoes = () => {
     return estudosModel.infoBoxAnotacoes;
 }
+
+exports.getinfoBoxTutoriais = () => {
+    return estudosModel.infoBoxTutoriais;
+}
+
+exports.getinfoBoxAulas = () => {
+    return estudosModel.infoBoxAulas;
+}

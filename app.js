@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 3000;
+const port = 3001;
 const app = express();
 const path = require('path');
 const createError = require('http-errors')
@@ -12,6 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', require('./routes/index'));
 app.use('/curriculo', require('./routes/curriculo'));
 app.use('/estudos', require('./routes/estudos'));
+
 
 // Resposta de Servidor Ligado
 app.listen(port, err => {

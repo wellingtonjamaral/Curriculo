@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/styles/subEstudos.css" />
+  <title></title>
+</head>
+
+<body>
+  <main>
+    <div class="menuTopButton">
+      <a class="homeButton" href="/">INÍCIO</a>
+    </div>
+    <p class="pageTitle">Bem vindo(a) aos meus <strong>Estudos pessoais</strong></p>
+    <div class="studyContainer">
+      <div class="studyMenuContainer">
+        <a href="/estudos/exercicios">
+          <div class="studyMenuButtonContainer">
+            <p class="studyMenuButtonText">EXERCÍCIOS</p>
+          </div>
+        </a>
+        <a href="/estudos/anotacoes">
+          <div class="studyMenuButtonContainer">
+            <p class="studyMenuButtonText">ANOTAÇÕES</p>
+          </div>
+        </a>
+        <a href="/estudos/tutoriais">
+          <div class="studyMenuButtonContainer">
+            <p class="studyMenuButtonText">TUTORIAIS</p>
+          </div>
+        </a>
+        <a href="/estudos/aulas">
+          <div class="studyMenuButtonContainer">
+            <p class="studyMenuButtonText">AULAS</p>
+          </div>
+        </a>
+        <a href="/estudos/links-uteis">
+          <div class="studyMenuButtonContainer">
+            <p class="studyMenuButtonText">LINKS ÚTEIS</p>
+          </div>
+        </a>
+      </div>
+      <!-- Info Anotações -->
+      <div class="studyInfo">
+        <h2 class="studyInfoTitle">Anotações</h2>
+        <p class="studyInfoContent">Estas são anotações que faço sobre o que eu estiver estudando no momento. Estas
+          anotações sempre são
+          atualizadas com novos conteúdos a medida que vou aprendendo.</p>
+        <div class="studyInfoBoxContainer">
+          <% infoBoxAnotacoes.map(infoBoxAnotacoes => { %>
+          <a href="<%= infoBoxAnotacoes.link %>" target="_blank">
+            <div class="studyInfoBox">
+              <table>
+                <tr>
+                  <td><img class="studyInfoBoxImage" src="<%= infoBoxAnotacoes.imageSrc %>" /></td>
+                  <td>
+                    <tr>
+                      <td>
+                          <div class="studyInfoBoxTitle"><%= infoBoxAnotacoes.title %></div>
+                          <div class="studyInfoBoxLinkAddress"><%= infoBoxAnotacoes.linkAddress %></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <div class="studyInfoBoxContent"><%= infoBoxAnotacoes.content %></div>
+                      </td>
+                    </tr>
+                  </td>
+                </tr>
+            </table>
+            </div>
+          </a>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

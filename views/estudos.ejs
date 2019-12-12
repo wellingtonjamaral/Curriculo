@@ -81,23 +81,64 @@
               </a>
               <% }); %>
         </div>
+        <div class="studyInfoFooterContainer">
+          <a href="/estudos/anotacoes">
+            <div class="studyInfoFooterButton">VER MAIS</div>
+          </a>
+        </div>
       </div>
       <!-- Info Tutoriais -->
       <div class="studyInfo">
         <h2 class="studyInfoTitle">Tutoriais</h2>
         <p class="studyInfoContent">Sites que oferencem ensinamentos e exercícios praticos.</p>
+        <div class="studyInfoBoxContainer">
+          <% infoBoxTutoriais.map(infoBoxTutoriais => { %>
+          <a href="<%= infoBoxTutoriais.link %>" target="_blank">
+            <div class="studyInfoBox">
+              <p class="studyInfoBoxTitle"><%= infoBoxTutoriais.title %></p>
+              <img class="studyInfoBoxImage" src="<%= infoBoxTutoriais.imageSrc %>" />
+              <p class="studyInfoBoxLinkAddress"><%= infoBoxTutoriais.linkAddress %></p>
+              <p class="studyInfoBoxContent"><%= infoBoxTutoriais.content %></p>
+            </div>
+          </a>
+          <% }); %>
+        </div>
+        <div class="studyInfoFooterContainer">
+          <a href="/estudos/tutoriais">
+            <div class="studyInfoFooterButton">VER MAIS</div>
+          </a>
+        </div>
       </div>
       <!-- Info Aulas -->
       <div class="studyInfo">
         <h2 class="studyInfoTitle">Aulas</h2>
         <p class="studyInfoContent">Estes são vídeos que me ajudaram a aprender de uma forma clara a respeito de
           diversos assuntos relacionado a programação.</p>
+          <div class="studyInfoBoxContainer">
+              <% infoBoxAulas.map(infoBoxAulas => { %>
+                <a href="<%= infoBoxAulas.link %>" target="_blank">
+                  <div class="studyInfoBox">
+                    <p class="studyInfoBoxTitle"><%= infoBoxAulas.title %></p>
+                    <p class="studyInfoBoxDifficult"><%= infoBoxAulas.difficult %></p>
+                    <img class="studyInfoBoxImage" src="<%= infoBoxAulas.imageSrc %>" />
+                    <p class="studyInfoBoxLinkAddress"><%= infoBoxAulas.linkAddress %></p>
+                    <p class="studyInfoBoxContent"><%= infoBoxAulas.content %></p>
+                  </div>
+                </a>
+                <% }); %>
+          </div>
+          <div class="studyInfoFooterContainer">
+            <a href="/estudos/aulas">
+              <div class="studyInfoFooterButton">VER MAIS</div>
+            </a>
+          </div>
       </div>
       <!-- Info Links Úteis -->
       <div class="studyInfo">
         <h2 class="studyInfoTitle">Links Úteis</h2>
         <p class="studyInfoContent">Links que são ótimos para pesquisas, estudos e outras funcionalidades.</p>
       </div>
+      
     </div>
   </main>
 </body>

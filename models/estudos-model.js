@@ -50,12 +50,74 @@ const data = {
         content: 'TAGs, tributos e explicações sobre HTML.'
     },
     {
-        title: 'Database (MongoDB)',
-        link: 'https://docs.google.com/document/d/1O-3WcWgwsrXpSSxJgBssqOqN9AugmtZWVB1Z7WRI28k/edit?usp=sharing',
+        title: 'NodeJs, Express e MongoDB',
+        link: 'https://docs.google.com/document/d/1aqaUSctj6fx8JjzrVVxRYRozGGouoJXPDjFtuEm_t1k/edit?usp=sharing',
         linkAddress: 'docs.google',
         imageSrc: '/images/googleDocsIcon.png',
-        content: 'Funcionalidades e comandos utilizados para gerenciar o MongoDB.'
+        content: 'Como preparar e entender um ambiente de desenvolvimento Back-end utilizando NodeJs, Express e MongoDB.'
     }],
+
+    infoBoxTutoriais: [{
+        title: 'Java Script',
+        link: 'https://www.w3schools.com/js/default.asp',
+        linkAddress: 'w3schools.com',
+        imageSrc: '/images/w3schoolIcon.png',
+        content: 'Site que ensina sintaxes da linguagem JavaScript e que também contem exemplos práticos.'
+    },
+    {
+        title: 'Tutoriais MDN',
+        link: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript',
+        linkAddress: 'developer.mozilla',
+        imageSrc: '/images/mdnIcon.png',
+        content: 'Tutoriais para desenvolvimento WEB JavaScript que oferece 3 níveis de aula (iniciante, intermediario e avançado) e referências.'
+    },
+    {
+        title: 'JavaScript e Exemplos',
+        link: 'https://www.javaguides.net/p/javascript-tutorial-with-examples.html',
+        linkAddress: 'javaguides.net',
+        imageSrc: '/images/javaguidesIcon.jpg',
+        content: 'Guias e exemplos de projetos de APIs com JavaScript.'
+    },
+    {
+        title: 'Tutoriais Khan Academy',
+        link: 'https://pt.khanacademy.org/computing/computer-programming',
+        linkAddress: 'khanacademy.org',
+        imageSrc: '/images/khanacademyIcon.png',
+        content: 'Diversos tutoriais de JavaScript do basico ao avançado incluido JavScript para criação de Jogos.'
+    }],
+
+    infoBoxAulas: [{
+        title: 'Curso de JavaScript',
+        difficult: '(Facil)',
+        link: 'https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1',
+        linkAddress: '33 Vídeos (10h 28min)',
+        imageSrc: '/images/youtubeIcon.png',
+        content: 'Este é um Curso Grátis para Iniciantes que ensina os Comandos Basicos, DOM, Condições, Repetições, etc.'
+    },
+    {
+        title: 'Curso de NodeJs',
+        difficult: '(Dificil)',
+        link: 'https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B',
+        linkAddress: '64 Vídeos (+ de 10h)',
+        imageSrc: '/images/youtubeIcon.png',
+        content: 'Curso grátis de NodeJs, utilizando Express.js, Mongoose, MySQL, MongoDB, Sequelize e JavaScript.'
+    },
+    {
+        title: 'Curso de JavaScript',
+        difficult: '(Médio)',
+        link: 'https://www.youtube.com/playlist?list=PLx4x_zx8csUj3IbPQ4_X5jis_SkCol3eC',
+        linkAddress: '98 Vídeos (+ de 25h)',
+        imageSrc: '/images/youtubeIcon.png',
+        content: 'Curso de JavaScript completo.'
+    },
+    {
+        title: 'NodeJs e MongoDB',
+        difficult: '(Médio)',
+        link: 'https://www.youtube.com/playlist?list=PLTLAlheiUm5FxXSJq7LX2NTWy7Aal1_wP',
+        linkAddress: '7 Vídeos (56min)',
+        imageSrc: '/images/youtubeIcon.png',
+        content: 'Aulas que usam um projeto de exemplo para explicar a função de cada arquivo.'
+    }]    
 }
 
 module.exports = data;

@@ -9,8 +9,8 @@
 <body>
   <main>
     <div class="menuTopButton">
-        <a class="homeButton" href="/">INÍCIO</a>
-        <a class="homeButton" href="/">CONTATO</a>
+      <a class="homeButton" href="/">INÍCIO</a>
+      <a class="homeButton" href="/">CONTATO</a>
     </div>
     <p class="pageTitle">Bem vindo(a) ao <strong><%= title %></strong></p>
     <div class="perfilBox">
@@ -28,11 +28,27 @@
       <p><%= profession %></p>
       <p class="description"><%= description %></p>
       <ul>
+        <ul>
+          <strong class="subTitle"><%= subTitleSkills %></strong>
+          <% skills.map(skill => { %>
+          <li><%= skill %></li>
+          <% }); %>
+        </ul><br>
+        <strong class="subTitle"><%= subTitleLinguages %></strong>
+        <% linguages.map(linguages => { %>
+        <li class="listStyle">
+          <div>
+            <span><b><%= linguages.linguage %></b></span>
+            <br>
+            <span><%= linguages.level %></span>
+          </div>
+        </li>
+        <% }); %>
         <strong class="subTitle"><%= subTitleCourse %></strong>
         <% course.map(course => { %>
         <li class="listStyle">
           <div>
-            <span><%= course.skill %></span>
+            <span><b><%= course.skill %></b></span>
             <br>
             <span><%= course.institution %></span>
             <br>
@@ -46,7 +62,7 @@
         <% education.map(education => { %>
         <li class="listStyle">
           <div>
-            <span><%= education.description %></span>
+            <span><b><%= education.description %></b></span>
             <br>
             <span><%= education.institution %></span>
             <br>
@@ -55,11 +71,13 @@
         </li>
         <% }); %>
       </ul>
-      <ul>
-        <% skills.map(skill => { %>
-        <li><%= skill %></li>
-        <% }); %>
-      </ul>
+      <strong class="subTitle"><%= subTitleAdress %></strong>
+      <% adress.map(adress => { %>
+      <p><b><%= adress.locate %></b></p>
+      <p><%= adress.street %></p>
+      <p><%= adress.bairro %></p>
+      <p><%= adress.CEP %></p>
+      <% }); %>
     </div>
   </main>
 </body>

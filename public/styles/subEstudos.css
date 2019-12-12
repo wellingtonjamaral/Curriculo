@@ -153,20 +153,16 @@ main, footer {
     
 
 /* Caixas de Link */
-.studyInfoBoxContainer {
-    display: flex;
-}
 
 .studyInfoBox {
     background-color: rgb(231, 231, 231);
     border-radius: 10px 10px 10px 10px;
     border: solid 2px rgb(179, 179, 179);
-    text-align: center;
-    width: 195px;
-    height: 335px;
+    padding: 5px;
+    min-height: 120px;
     color: rgb(63, 63, 63);
-    display: inline-block;
     margin: 5px;
+    margin-top: 10px;
 }
 
 .studyInfoBox:hover {
@@ -177,7 +173,14 @@ main, footer {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.100) inset;
 }
 
+.studyInfoBoxImage {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
 .studyInfoBoxTitle {
+    margin-left: 100px;
     font-weight: bold;
     line-height: 20px;
 }
@@ -187,18 +190,14 @@ main, footer {
     margin-bottom: -10px;
 }
 
-.studyInfoBoxImage {
-    width: 150px;
-    height: 150px;
-    margin-top: 10px;
-}
-
 .studyInfoBoxLinkAddress {
+    margin-left: 100px;
     font-size: 10pt;
-    margin-top: -15px;
     margin-bottom: 5px;
 }
 
 .studyInfoBoxContent {
+    margin-top: 10px;
+    margin-left: 100px;
     line-height: 15pt;
 }
