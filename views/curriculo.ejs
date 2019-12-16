@@ -28,12 +28,13 @@
       <p><%= profession %></p>
       <p class="description"><%= description %></p>
       <ul>
-        <ul>
+        <div>
           <strong class="subTitle"><%= subTitleSkills %></strong>
           <% skills.map(skill => { %>
-          <li><%= skill %></li>
+          <br>
+          <span><%= skill %></span>
           <% }); %>
-        </ul><br>
+        </div><br>
         <strong class="subTitle"><%= subTitleLinguages %></strong>
         <% linguages.map(linguages => { %>
         <li class="listStyle">
