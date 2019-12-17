@@ -1,7 +1,7 @@
 const data = {
     title: 'Meu currículo',
     name: 'Leonardo Costa e Paula',
-    profession: 'Software Engineer',
+    objective: 'Objetivo',
     description: 'Meu objetivo no momento é conseguir estabilidade financeira, para poder ajudar minha família e juntar dinheiro para fazer uma faculdade, e acredito que alcançarei os meus objetivos conforme o meu bom desempenho. Tendo isto em mente pretendo me esforçar todos os dias, porque acredito que este seja o meu primeiro passo para a conquista do sucesso profissional.',
     subTitleCourse: 'Cursos',
     subTitleContact: 'Contato',
@@ -11,7 +11,7 @@ const data = {
         email: 'E-Mail: leocosta.black@gmail.com',
         cellPhone: 'Celular: (11) 9872-56815'
     }],
-    skills: ['Lógica', 'JavaScript', 'NodeJs', 'ExpressJs', 'Git', 'GitHub'],
+    skills: ['Lógica', 'JavaScript', 'NodeJs', 'ExpressJs', 'Git', 'GitHub', 'HTML', 'CSS'],
     linguages: [{
         linguage: 'Inglês',
         level: 'Leitura (intermediario)'

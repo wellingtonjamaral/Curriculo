@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/styles/curriculo.css" />
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <main>
+    <div class="menuTopButton">
+      <a class="homeButton" href="/">INÍCIO</a>
+      <a class="homeButton" href="/">CONTATO</a>
+    </div>
+    <p class="pageTitle">Bem vindo(a) ao <strong>{{title}}</strong></p>
+    <div class="perfilBox">
+      <img class="bgPerfilBox" src="/images/imgPerfil.png" />
+      <img class="photoPerfilBox" src="/images/imgPerfil.jpg" />
+      </br>
+      <strong class="contactSubTitle">{{subTitleContact}}</strong>
+      {{#each contact}}
+      <p class="contactText">{{this.email}}</p>
+      <p class="contactText">{{this.cellPhone}}</p>
+      {{/each}}
+    </div>
+    <div class="curriculoBox">
+      <h1>{{name}}</h1>
+      <p><b>{{objective}}</b></p>
+      <p class="description">{{description}}</p>
+        <div>
+          <strong class="subTitle">{{subTitleSkills}}</strong>
+          <br>
+          {{#each skills}}
+          <span>{{this}}. </span>
+          {{/each}}
+        </div><br>
+      <ul>
+        <strong class="subTitle">{{subTitleLinguages}}</strong>
+        {{#each linguages}}
+        <li class="listStyle">
+          <div>
+            <span><b>{{this.linguage}}</b></span>
+            <br>
+            <span>{{this.level}}</span>
+          </div>
+        </li>
+        {{/each}}
+        <strong class="subTitle">{{subTitleCourse}}</strong>
+        {{#each course}}
+        <li class="listStyle">
+          <div>
+            <span><b>{{this.skill}}</b></span>
+            <br>
+            <span>{{this.institution}}</span>
+            <br>
+            <span>{{this.finishedIn}}</span>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      <ul>
+        <strong class="subTitle">{{subTitleEducation}}</strong>
+        {{#each education}}
+        <li class="listStyle">
+          <div>
+            <span><b>{{this.description}}</b></span>
+            <br>
+            <span>{{this.institution}}</span>
+            <br>
+            <span>{{this.finishedIn}}</span>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      <strong class="subTitle">{{subTitleAdress}}</strong>
+      {{#each adress}}
+      <p><b>{{this.locate}}</b></p>
+      <p>{{this.street}}</p>
+      <p>{{this.bairro}}</p>
+      <p>{{this.CEP}}</p>
+      {{/each}}
+    </div>
+  </main>
+</body>
+
+</html>

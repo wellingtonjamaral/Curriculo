@@ -47,22 +47,22 @@
           anotações sempre são
           atualizadas com novos conteúdos a medida que vou aprendendo.</p>
         <div class="studyInfoBoxContainer">
-          <% infoBoxAnotacoes.map(infoBoxAnotacoes => { %>
-          <a href="<%= infoBoxAnotacoes.link %>" target="_blank">
+          {{#each infoBoxAnotacoes}}
+          <a href="{{this.link}}" target="_blank">
             <div class="studyInfoBox">
               <table>
                 <tr>
-                  <td><img class="studyInfoBoxImage" src="<%= infoBoxAnotacoes.imageSrc %>" /></td>
+                  <td><img class="studyInfoBoxImage" src="{{this.imageSrc}}" /></td>
                   <td>
                     <tr>
                       <td>
-                          <div class="studyInfoBoxTitle"><%= infoBoxAnotacoes.title %></div>
-                          <div class="studyInfoBoxLinkAddress"><%= infoBoxAnotacoes.linkAddress %></div>
+                          <div class="studyInfoBoxTitle">{{this.title}}</div>
+                          <div class="studyInfoBoxLinkAddress">{{this.linkAddress}}</div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                          <div class="studyInfoBoxContent"><%= infoBoxAnotacoes.content %></div>
+                          <div class="studyInfoBoxContent">{{this.content}}</div>
                       </td>
                     </tr>
                   </td>
@@ -70,7 +70,7 @@
             </table>
             </div>
           </a>
-          <% }); %>
+          {{/each}}
         </div>
       </div>
     </div>

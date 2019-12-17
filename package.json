@@ -2,10 +2,10 @@
   "name": "curriculo-expresso",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node_modules/nodemon/bin/nodemon.js app"
+    "dev": "node_modules/nodemon/bin/nodemon.js app",
+    "dev2": "node node_modules/nodemon/bin/nodemon.js app"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,8 @@
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "handlebars": "^4.5.3",
+    "hbs": "^4.0.6",
     "http-errors": "^1.7.3",
     "normalize.css": "^8.0.1"
   },

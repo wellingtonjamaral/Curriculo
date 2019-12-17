@@ -46,16 +46,16 @@
         <p class="studyInfoContent">Estes são exercícios que pratico para me ajudarem a memorizar as sintaxe e suas
           respectivas funções.</p>
         <div class="studyInfoBoxContainer">
-          <% infoBoxExercicios.map(infoBoxExercicios => { %>
-          <a href="<%= infoBoxExercicios.link %>" target="_blank">
+          {{#each infoBoxExercicios}}
+          <a href="{{this.link}}" target="_blank">
             <div class="studyInfoBox">
-              <p class="studyInfoBoxTitle"><%= infoBoxExercicios.title %></p>
-              <img class="studyInfoBoxImage" src="<%= infoBoxExercicios.imageSrc %>" />
-              <p class="studyInfoBoxLinkAddress"><%= infoBoxExercicios.linkAddress %></p>
-              <p class="studyInfoBoxContent"><%= infoBoxExercicios.content %></p>
+              <p class="studyInfoBoxTitle">{{this.title}}</p>
+              <img class="studyInfoBoxImage" src="{{this.imageSrc}}" />
+              <p class="studyInfoBoxLinkAddress">{{this.linkAddress}}</p>
+              <p class="studyInfoBoxContent">{{this.content}}</p>
             </div>
           </a>
-          <% }); %>
+          {{/each}}
         </div>
         <div class="studyInfoFooterContainer">
           <a href="/estudos/exercicios">
@@ -70,16 +70,16 @@
           anotações sempre são
           atualizadas com novos conteúdos a medida que vou aprendendo.</p>
         <div class="studyInfoBoxContainer">
-            <% infoBoxAnotacoes.map(infoBoxAnotacoes => { %>
-              <a href="<%= infoBoxAnotacoes.link %>" target="_blank">
+            {{#each infoBoxAnotacoes}}
+              <a href="{{this.link}}" target="_blank">
                 <div class="studyInfoBox">
-                  <p class="studyInfoBoxTitle"><%= infoBoxAnotacoes.title %></p>
-                  <img class="studyInfoBoxImage" src="<%= infoBoxAnotacoes.imageSrc %>" />
-                  <p class="studyInfoBoxLinkAddress"><%= infoBoxAnotacoes.linkAddress %></p>
-                  <p class="studyInfoBoxContent"><%= infoBoxAnotacoes.content %></p>
+                  <p class="studyInfoBoxTitle">{{this.title}}</p>
+                  <img class="studyInfoBoxImage" src="{{this.imageSrc}}" />
+                  <p class="studyInfoBoxLinkAddress">{{this.linkAddress}}</p>
+                  <p class="studyInfoBoxContent">{{this.content}}</p>
                 </div>
               </a>
-              <% }); %>
+            {{/each}}
         </div>
         <div class="studyInfoFooterContainer">
           <a href="/estudos/anotacoes">
@@ -92,16 +92,16 @@
         <h2 class="studyInfoTitle">Tutoriais</h2>
         <p class="studyInfoContent">Sites que oferencem ensinamentos e exercícios praticos.</p>
         <div class="studyInfoBoxContainer">
-          <% infoBoxTutoriais.map(infoBoxTutoriais => { %>
-          <a href="<%= infoBoxTutoriais.link %>" target="_blank">
+         {{#each infoBoxTutoriais}}
+          <a href="{{this.link}}" target="_blank">
             <div class="studyInfoBox">
-              <p class="studyInfoBoxTitle"><%= infoBoxTutoriais.title %></p>
-              <img class="studyInfoBoxImage" src="<%= infoBoxTutoriais.imageSrc %>" />
-              <p class="studyInfoBoxLinkAddress"><%= infoBoxTutoriais.linkAddress %></p>
-              <p class="studyInfoBoxContent"><%= infoBoxTutoriais.content %></p>
+              <p class="studyInfoBoxTitle">{{this.title}}</p>
+              <img class="studyInfoBoxImage" src="{{this.imageSrc}}" />
+              <p class="studyInfoBoxLinkAddress">{{this.linkAddress}}</p>
+              <p class="studyInfoBoxContent">{{this.content}}</p>
             </div>
           </a>
-          <% }); %>
+         {{/each}}
         </div>
         <div class="studyInfoFooterContainer">
           <a href="/estudos/tutoriais">
@@ -115,17 +115,17 @@
         <p class="studyInfoContent">Estes são vídeos que me ajudaram a aprender de uma forma clara a respeito de
           diversos assuntos relacionado a programação.</p>
           <div class="studyInfoBoxContainer">
-              <% infoBoxAulas.map(infoBoxAulas => { %>
-                <a href="<%= infoBoxAulas.link %>" target="_blank">
+              {{#each infoBoxAulas}}
+                <a href="{{this.link}}" target="_blank">
                   <div class="studyInfoBox">
-                    <p class="studyInfoBoxTitle"><%= infoBoxAulas.title %></p>
-                    <p class="studyInfoBoxDifficult"><%= infoBoxAulas.difficult %></p>
-                    <img class="studyInfoBoxImage" src="<%= infoBoxAulas.imageSrc %>" />
-                    <p class="studyInfoBoxLinkAddress"><%= infoBoxAulas.linkAddress %></p>
-                    <p class="studyInfoBoxContent"><%= infoBoxAulas.content %></p>
+                    <p class="studyInfoBoxTitle">{{this.title}}</p>
+                    <p class="studyInfoBoxDifficult">{{this.difficult}}</p>
+                    <img class="studyInfoBoxImage" src="{{this.imageSrc}}" />
+                    <p class="studyInfoBoxLinkAddress">{{this.linkAddress}}</p>
+                    <p class="studyInfoBoxContent">{{this.content}}</p>
                   </div>
                 </a>
-                <% }); %>
+                {{/each}}
           </div>
           <div class="studyInfoFooterContainer">
             <a href="/estudos/aulas">
@@ -142,5 +142,4 @@
     </div>
   </main>
 </body>
-
 </html>
