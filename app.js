@@ -12,6 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', require('./routes/index'));
 app.use('/curriculo', require('./routes/curriculo'));
 app.use('/estudos', require('./routes/estudos'));
+app.use('/anotacoes', require('./routes/anotacoes'));
 
 
 // Resposta de Servidor Ligado

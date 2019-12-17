@@ -1,44 +1,22 @@
-<!DOCTYPE html>
-<html>
-
-<head>
   <link rel="stylesheet" href="/styles/estudos.css" />
-  <title></title>
-</head>
-
-<body>
-  <main>
-    <div class="menuTopButton">
-      <a class="homeButton" href="/">INÍCIO</a>
-    </div>
+  <link rel="stylesheet" href="/styles/menuEstudos.css" />
+   <main>
     <p class="pageTitle">Bem vindo(a) aos meus <strong>Estudos pessoais</strong></p>
     <div class="studyContainer">
+      <!-- Menu Estudos -->
       <div class="studyMenuContainer">
-        <a href="/estudos/exercicios">
-          <div class="studyMenuButtonContainer">
-            <p class="studyMenuButtonText">EXERCÍCIOS</p>
-          </div>
-        </a>
-        <a href="/estudos/anotacoes">
-          <div class="studyMenuButtonContainer">
-            <p class="studyMenuButtonText">ANOTAÇÕES</p>
-          </div>
-        </a>
-        <a href="/estudos/tutoriais">
-          <div class="studyMenuButtonContainer">
-            <p class="studyMenuButtonText">TUTORIAIS</p>
-          </div>
-        </a>
-        <a href="/estudos/aulas">
-          <div class="studyMenuButtonContainer">
-            <p class="studyMenuButtonText">AULAS</p>
-          </div>
-        </a>
-        <a href="/estudos/links-uteis">
-          <div class="studyMenuButtonContainer">
-            <p class="studyMenuButtonText">LINKS ÚTEIS</p>
-          </div>
-        </a>
+       <!--Simbolo do Menu (3 riscos)-->
+      <input type="checkbox" id="miniMenu">
+      <label for="miniMenu">&#9776; Menu</label>
+      <nav class="menuEstudos">
+        <ul class="menuEstudosList">
+          <li class="menuEstudosButton"><a class="menuEstudosLink" href="/estudos/exercicios">EXERCÍCIOS</a></li>
+          <li class="menuEstudosButton"><a class="menuEstudosLink" href="anotacoes">ANOTAÇÕES</a class="menuEstudosLink"></li>
+          <li class="menuEstudosButton"><a class="menuEstudosLink" href="/estudos/tutoriais">TUTORIAIS</a class="menuEstudosLink"></li class="menuEstudosButton">
+          <li class="menuEstudosButton"><a class="menuEstudosLink" href="/estudos/aulas">AULAS</a class="menuEstudosLink"></li class="menuEstudosButton">
+          <li class="menuEstudosButton"><a class="menuEstudosLink" href="/estudos/links-uteis">LINKS ÚTEIS</a class="menuEstudosLink"></li class="menuEstudosButton">
+        </ul>
+      </nav>
       </div>
       <!-- Info Exercícios -->
       <div class="studyInfo">
@@ -141,5 +119,3 @@
       
     </div>
   </main>
-</body>
-</html>

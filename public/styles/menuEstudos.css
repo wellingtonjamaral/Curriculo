@@ -1,0 +1,161 @@
+/* Seleção de todo o Menu*/
+.menuEstudos {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+  
+  /*Seleção do Menu */
+  
+  .menuEstudosList {
+    list-style: none;
+    position: relative;
+    z-index:9000;
+  }
+  
+  /* Seleção do Menu(LI)*/
+  
+  .menuEstudosButton {
+    width: 140px;
+    display: inline-block;
+  }
+  
+  /* Seleção dos link Tag: <a> */
+  
+  .menuEstudosLink {
+    background-color: rgb(226, 226, 226);
+    border-radius: 7px 7px 7px 7px;
+    font-weight: bold;
+    padding: 1px;
+    display: block;
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+  }
+  
+  .menuEstudosLink:hover {
+    /* Ação "MouseEnter" nos link Tag: <a> */
+    background-color: grey;
+    color: rgb(230, 230, 230);
+  }
+ 
+  /* Botão do Menu (quadradinho) */
+  
+  label[for="miniMenu"] {
+    display: none;
+    /*Deixa botão do menu invisivel com tela grande */
+    padding-left: 10px;
+    margin-top: -3px;
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    text-align: left;
+    color: rgb(105, 105, 105);
+  }
+  
+  #miniMenu {
+    display: none;
+  }
+  
+  /* Faz com que o CSS do Menu mude quando a janela estiver maior que 620 e menor que 905 */
+  
+  @media(min-width: 620px) and (max-width: 905px) {
+    /* Menu */
+    label[for="miniMenu"] {
+      display: block;
+    }
+    #miniMenu:checked~.menuEstudos {
+      margin-left: 0%;
+    }
+    .menuEstudos {
+      width: 150px;
+      margin-top: 15px;
+      margin-left: -200%;
+    }
+    .menuEstudosButton {
+      width: 100%;
+      float: none;
+      border: solid 3px rgb(184, 184, 184);
+      border-radius: 7px 7px 7px 7px;
+    }
+  }
+  
+  /* Faz com que o CSS do Menu mude quando a janela estiver maior que 355 e menor que 619 */
+  
+  @media(min-width: 355px) and (max-width: 619px) {
+    /* Menu */
+    label[for="miniMenu"] {
+      display: block;
+    }
+    #miniMenu:checked~.menuEstudos {
+      margin-left: 0%;
+    }
+    .menuEstudos {
+        margin-top: 15px;
+        margin-left: -200%;
+      /*Faz o menu sumir*/
+      transition: all 0.4s;
+    }
+    .menuEstudosButton {
+      width: 100%;
+      float: none;
+      border: solid 3px rgb(184, 184, 184);
+      border-radius: 7px 7px 7px 7px;
+    }
+
+    .menuEstudosButton:hover .menuEstudosList {
+      height: auto;
+      max-height: 200px;
+      /* Faz com que a lista tenha um tamanho limite */
+    }
+  }
+  /*Faz com que o CSS do Menu mude quando a janela estiver maior que 292 e menor que 354 -->*/
+  
+  @media(min-width: 292px) and (max-width: 354px) {
+    /* Menu */
+    label[for="miniMenu"] {
+      display: block;
+    }
+    #miniMenu:checked~.menuEstudos {
+      margin-left: 0%;
+    }
+    .menuEstudos {
+        margin-top: 15px;
+        margin-left: -200%;
+      /*Faz o menu sumir*/
+      transition: all 0.4s;
+    }
+    .menuEstudosButton {
+      width: 100%;
+      float: none;
+      margin-top: -4px;
+      border: solid 3px rgb(184, 184, 184);
+      border-radius: 7px 7px 7px 7px;
+    }
+  }
+  
+  /* Faz com que o CSS do Menu mude quando a janela estiver menor que 291 */
+  
+  @media(max-width: 291px) {
+    /* Menu */
+    label[for="miniMenu"] {
+      display: block;
+    }
+    #miniMenu:checked~.menuEstudos {
+      margin-left: 0%;
+    }
+    .menuEstudos {
+      margin-top: 5px;
+      margin-left: -200%;
+      /*Faz o menu sumir*/
+      transition: all 0.4s;
+    }
+    .menuEstudosButton {
+      width: 100%;
+      float: none;
+      border-bottom: solid 1px rgb(54, 54, 54);
+      margin-top: -4px;
+    }
+  }
